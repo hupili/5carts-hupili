@@ -2,6 +2,13 @@
 layout: page
 title: Index
 ---
+{% include JB/setup %}
+
+<div style="visibility:hidden" id="div_configs">
+	<form id="configs">
+		<input type="hidden" name="" id="asset_path" value="{{ ASSET_PATH }}" />
+	</form>
+</div>
 
 <table border="1">
 	<tr>
@@ -22,10 +29,10 @@ title: Index
 		<td> {{ _name }} </td>
 		<td> {{ _category }} </td>
 		<td> 
-			<a href="{{ _link }}">Go</a>
+			<a class="review_link" href="{{ _link }}">Go</a>
 		</td>
-		<td> {{ _open_source }} </td>
-		<td> {{ _open_format }} </td>
+		<td> <span class="icon_bool"> {{ _open_source }} </span> </td>
+		<td> <span class="icon_bool"> {{ _open_format }} </span> </td>
 		<td> {{ _rate_use }} </td>
 		<td> {{ _rate_quality }} </td>
 		<td>

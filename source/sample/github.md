@@ -1,8 +1,8 @@
 ---
 name: GitHub
 link: http://github.com/
-open_source: 
-open_format: 
+open_source: false
+open_format: true
 rate_use: 10
 rate_quality: 9
 tags: ["GitHub", "Git", "community"]
