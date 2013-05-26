@@ -1,5 +1,5 @@
 ---
-name: mindomo
+name: tamiz (TeXmacs Tips)
 link: http://tamiz.tiddlyspace.com
 open_source:
 open_format:
