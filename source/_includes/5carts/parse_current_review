@@ -1,0 +1,44 @@
+{% comment %}<!--
+Usage:
+  1) Assign the 'current_review' variable to a valid review page
+  2) Include 5carts/parse_current_review
+  3) The following variables will be set:
+     * _is_review
+     * _category
+     * _url
+  example:
+-->{% endcomment %}
+
+{% include JB/setup %}
+
+{% assign _date = current_review.date %}
+{% assign _name = current_review.name %}
+{% assign _link = current_review.link %}
+{% assign _tags = current_review.tags %}
+{% assign _rate_quality = current_review.rate_quality %}
+{% assign _rate_use = current_review.rate_use %}
+{% assign _open_source = current_review.open_source %}
+{% assign _open_format = current_review.open_format %}
+{% assign _open_format = current_review.open_format %}
+
+{% if current_review.layout == 'review' %}
+	{% assign _is_review = true %}
+{% else %}
+	{% assign _is_review = false %}
+{% endif %}
+
+{% if current_review.category == nil %}
+	{% capture _category %}
+		{{ current_review.url | remove_first:'/' | split:'/' | first }}
+	{% endcapture %}
+{% else %}
+	{% assign _category = current_review.category %}
+{% endif %}
+
+{% if BASE_PATH == nil %}
+	{% assign _url = current_review.url %}
+{% else %}
+	{% capture _url %}
+		{{ BASE_PATH }}{{current_review.url}}
+	{% endcapture %}
+{% endif %}

@@ -1,0 +1,8 @@
+{% assign nav_pages = site.navigation %}
+{% for p in nav_pages %}
+{% if BASE_PATH == nil %}
+<li> <a href="{{p.href}}">{{p.name}}</a> </li>
+{% else %}
+<li> <a href="{{ BASE_PATH }}/{{p.href}}">{{p.name}}</a> </li>
+{% endif %}
+{% endfor %}

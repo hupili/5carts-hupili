@@ -1,0 +1,38 @@
+---
+layout: page
+title: Index
+---
+
+<table border="1">
+	<tr>
+		<th>Name</th>
+		<th>Category</th>
+		<th>Link</th>
+		<th>Open Source</th>
+		<th>Open Format</th>
+		<th>Use Rate</th>
+		<th>Quality Rate</th>
+		<th>More</th>
+	</tr>
+	{% for p in site.pages %}
+	{% assign current_review = p %}
+	{% include 5carts/parse_current_review %}
+	{% if _is_review == true %}
+	<tr>
+		<td> {{ _name }} </td>
+		<td> {{ _category }} </td>
+		<td> 
+			<a href="{{ _link }}">Go</a>
+		</td>
+		<td> {{ _open_source }} </td>
+		<td> {{ _open_format }} </td>
+		<td> {{ _rate_use }} </td>
+		<td> {{ _rate_quality }} </td>
+		<td>
+			<a class="" href="{{ _url }}"> more...</a>	
+		</td>			
+	</tr>
+	{% endif %}
+	{% endfor %}
+</table>
+

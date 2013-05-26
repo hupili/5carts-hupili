@@ -1,0 +1,41 @@
+<div class="page-header">
+	<h1>{{ page.name }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+</div>
+
+{% assign current_review = page %}
+{% include 5carts/parse_current_review %}
+
+<div class="review_meta_block">
+<p>
+Meta data of this review: 
+</p>
+<ul class="review_meta">
+	<li>Name: {{ _name }}</li>
+	<li>Category: {{ _category }}</li>
+	<li>Link: <a href="{{ _link }}">{{ _link }}</a> </li>
+	<li>Open Source: {{ _open_source }}</li>
+	<li>Open Format: {{ _open_format }}</li>
+	<li>Use Rate: {{ _rate_use }}</li>
+	<li>Quality Rate: {{ _rate_quality }}</li>
+</ul>
+</div>
+
+<hr />
+
+<div class="row">
+	<div class="span12">
+		{{ content }}
+	</div>
+</div>
+
+<hr />
+
+{% if page.comments != false %}
+	{% assign show_comments = true %}
+{% endif %}
+
+{% if show_comments %}
+<div name="comments">
+	{% include JB/comments %}
+</div>
+{% endif %}
