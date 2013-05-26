@@ -1,14 +1,13 @@
 ---
-category: website
 name: mindomo
-url: http://www.mindomo.com
+link: http://www.mindomo.com
 open_source: false
 open_format: false
 rate_use: 0
 rate_quality: 5
 tags: ["mindmap"]
 language: en
-layout: page
+layout: review
 mathjax: false
 ---
 

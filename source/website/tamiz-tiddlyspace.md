@@ -1,14 +1,13 @@
 ---
-category: website
 name: mindomo
-url: http://tamiz.tiddlyspace.com
+link: http://tamiz.tiddlyspace.com
 open_source:
 open_format:
 rate_use:
 rate_quality:
 tags: ["texmacs", "tip"]
 language: en
-layout: page
+layout: review
 mathjax: false
 ---
 
