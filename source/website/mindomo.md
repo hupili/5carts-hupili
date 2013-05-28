@@ -1,5 +1,6 @@
 ---
 name: mindomo
+date: 2013-05-19
 link: http://www.mindomo.com
 open_source: false
 open_format: false

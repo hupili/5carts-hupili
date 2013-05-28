@@ -1,5 +1,6 @@
 ---
 name: tamiz (TeXmacs Tips)
+date: 2013-05-20
 link: http://tamiz.tiddlyspace.com
 open_source:
 open_format:
