@@ -1,5 +1,6 @@
 ---
 name: GitHub
+date: 2013-05-26
 link: http://github.com/
 open_source: false
 open_format: true
