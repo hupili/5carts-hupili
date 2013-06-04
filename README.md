@@ -16,12 +16,14 @@ How
    * Use GitHub pages and Jekyll. 
    * Write reviews for all kinds of stuffs
    with structured data (frontmatter of Jekyll pages)
-   un structured data (lengthy body). 
-   * Able to write under any environment. 
-   * Able to render full pages (like blog posts) 
+   and unstructured data (lengthy body). 
+   * Be able to write under any environment. 
+   * Be able to render full pages (like blog posts) 
    and digest with different categorization scheme. 
    * Provide index for easy search.
    * Categorization in a human way (by directory).
+   * Output Meta data in XML format (make machine readable information).
+   * Use Frontend AJAX to provide rich function.
 
 What
 ----
@@ -29,6 +31,7 @@ What
    * A Jekyll template. 
    * Tools (shell scripts to call git) for gh-page distribution. 
    * Some sample review pages.
+   * AJAX suites to provide rich functions.
 
 Status
 ------

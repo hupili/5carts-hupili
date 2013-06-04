@@ -12,10 +12,13 @@ $(document).ready(function(){
 	$(".review_link").map( function(){
 		var me = $(this);
 		var href = $(this).attr("href");
-		var href_favicon = href + "favicon.ico";
+		var parser = document.createElement('a');
+		parser.href = href; 
+		var href_favicon = parser.protocol + "//" + parser.host + "/favicon.ico";
+		//alert(href_favicon);
 		imageExists(href_favicon, function(src, exists) {
 			if (exists) {
-				$('<img>').attr('src', src).appendTo(me);
+				$('<img class="favicon tabular">').attr('src', src).appendTo(me);
 			} else {
 				// do nothing
 			}
