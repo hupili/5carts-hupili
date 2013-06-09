@@ -1,5 +1,6 @@
 ---
 name: 三体
+alias: ["Three Body", "地球往事", "三体2: 黑暗森林", "三体3: 死神永生"]
 author: 刘慈欣
 date: 2013-06-02
 link: http://book.douban.com/subject/2567698/

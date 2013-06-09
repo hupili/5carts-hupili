@@ -1,5 +1,6 @@
 ---
 name: 球状闪电
+alias: ["Spherical Lightning", "Ball Lightning"]
 author: 刘慈欣
 date: 2013-06-09
 link: http://book.douban.com/subject/1192090/
