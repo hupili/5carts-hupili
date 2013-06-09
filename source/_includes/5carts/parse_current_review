@@ -13,6 +13,9 @@ Usage:
 
 {% assign _date = current_review.date %}
 {% assign _name = current_review.name %}
+{% capture _alias %}
+{{ current_review.alias | join: ';' }}
+{% endcapture %}
 {% assign _link = current_review.link %}
 {% assign _tags = current_review.tags %}
 {% assign _rate_quality = current_review.rate_quality %}
