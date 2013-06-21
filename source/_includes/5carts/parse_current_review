@@ -13,9 +13,7 @@ Usage:
 
 {% assign _date = current_review.date %}
 {% assign _name = current_review.name %}
-{% capture _alias %}
-{{ current_review.alias | join: '; ' }}
-{% endcapture %}
+{% capture _alias %}{{ current_review.alias | join: '; ' }}{% endcapture %}
 {% assign _link = current_review.link %}
 {% assign _tags = current_review.tags %}
 {% assign _rate_quality = current_review.rate_quality %}
@@ -31,9 +29,7 @@ Usage:
 {% endif %}
 
 {% if current_review.category == nil %}
-	{% capture _category %}
-		{{ current_review.url | remove_first:'/' | split:'/' | first }}
-	{% endcapture %}
+	{% capture _category %}{{ current_review.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
 {% else %}
 	{% assign _category = current_review.category %}
 {% endif %}
@@ -41,7 +37,5 @@ Usage:
 {% if BASE_PATH == nil %}
 	{% assign _url = current_review.url %}
 {% else %}
-	{% capture _url %}
-		{{ BASE_PATH }}{{current_review.url}}
-	{% endcapture %}
+	{% capture _url %}{{ BASE_PATH }}{{current_review.url}}{% endcapture %}
 {% endif %}
