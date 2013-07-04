@@ -17,6 +17,16 @@ The lecturer showed the
 [degree distribution of random graphs demo](http://demonstrations.wolfram.com/DegreeDistributionOnARandomNetwork/)
 .
 
+Advantages:
+
    * Looks to contain a lot demos. 
    * In a standard format for exchange.
+
+Disadvantages:
+
    * Need to install Wolfram's CDF player (200MB+ package; 800MB+ on disk...)
+   * The demos I'm interested in do not reflect what I want exactly.
+   I want to modify it. However.
+   No quick guide for me to create such demos?
+   Need to install other software to get started (e.g. Mathematica)?
+
