@@ -32,6 +32,8 @@ navigation:
   - 
     name: About
     href: about.html
+base_links:
+  pic: http://hupili.github.io/pic
 
 future:      true
 markdown:    redcarpet
